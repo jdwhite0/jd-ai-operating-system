@@ -1,0 +1,31 @@
+name: "🚀 Show your AI OS"
+description: Share how you're using your JD AI OS. We feature the best ones.
+title: "[Showcase]: "
+labels: ["showcase"]
+body:
+  - type: markdown
+    attributes:
+      value: "We love seeing what people build. Share your setup — you might get featured. ⭐"
+  - type: textarea
+    id: setup
+    attributes:
+      label: How are you using JD AI OS?
+      description: What do you run it for? What's your favorite part?
+      placeholder: "I use it to run my..."
+    validations:
+      required: true
+  - type: input
+    id: ai
+    attributes:
+      label: Which AI(s) do you connect?
+      placeholder: "Claude, ChatGPT, Gemini..."
+  - type: textarea
+    id: result
+    attributes:
+      label: Any results or wins?
+      placeholder: "Since setting it up, I..."
+  - type: input
+    id: link
+    attributes:
+      label: Link or handle (optional)
+      placeholder: "So we can tag you if we feature it"

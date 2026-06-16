@@ -1,0 +1,42 @@
+name: "🐛 Bug report"
+description: Something in the free starter or docs isn't working.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: "Thanks for helping make JD AI OS better. Please fill this out so we can reproduce it."
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead?
+      placeholder: "When I... I expected... but instead..."
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. ...
+        2. ...
+        3. ...
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part?
+      options:
+        - Free starter (folders / templates)
+        - Boot files (AI_START_HERE / CLAUDE.md)
+        - Docs
+        - Something else
+    validations:
+      required: true
+  - type: input
+    id: ai
+    attributes:
+      label: Which AI were you using?
+      placeholder: "Claude / ChatGPT / Gemini / other"
