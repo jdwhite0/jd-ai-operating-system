@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="assets/brand/jd-ai-os-symbol-gold.svg" alt="JD AI OS" width="140" />
+<img src="assets/brand/social-preview.png" alt="JD AI OS — The AI Operating System for Your Life & Business" width="100%" />
+
+<br/>
 
 # JD AI OS — The AI Operating System for Your Life & Business
 
@@ -184,6 +186,14 @@ on the same operating system.
 ---
 
 <div align="center">
+
+## ⭐ Star History
+
+<a href="https://star-history.com/#jdwhite0/jd-ai-operating-system&Date">
+  <img src="https://api.star-history.com/svg?repos=jdwhite0/jd-ai-operating-system&type=Date" alt="Star History Chart" width="600" />
+</a>
+
+---
 
 ### ⭐ If this is the future you want to build, star the repo.
 
