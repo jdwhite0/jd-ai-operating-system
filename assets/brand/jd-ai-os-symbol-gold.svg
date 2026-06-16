@@ -1,0 +1,73 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFC20E" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#FFC20E" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="centerNode" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD75E"/>
+      <stop offset="100%" stop-color="#FFC20E"/>
+    </radialGradient>
+    <radialGradient id="outerNode" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD75E"/>
+      <stop offset="100%" stop-color="#E0A500"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Orb boundary rings -->
+  <circle cx="60" cy="60" r="55" fill="url(#nodeGlow)" opacity="0.3"/>
+  <circle cx="60" cy="60" r="54" stroke="#FFC20E" stroke-width="0.8" opacity="0.2"/>
+  <circle cx="60" cy="60" r="56" stroke="#FFC20E" stroke-width="0.3" opacity="0.1"/>
+
+  <!-- Connection paths (curved) -->
+  <path d="M60 60 Q50 48 38 40" stroke="#FFC20E" stroke-width="1.2" opacity="0.45" fill="none"/>
+  <path d="M60 60 Q72 46 82 38" stroke="#FFC20E" stroke-width="1.2" opacity="0.45" fill="none"/>
+  <path d="M60 60 Q66 72 74 76" stroke="#FFC20E" stroke-width="1.2" opacity="0.45" fill="none"/>
+  <path d="M60 60 Q48 74 42 80" stroke="#FFC20E" stroke-width="1.2" opacity="0.45" fill="none"/>
+  <path d="M60 60 Q46 54 34 60" stroke="#FFC20E" stroke-width="0.9" opacity="0.3" fill="none"/>
+  <path d="M60 60 Q74 54 86 60" stroke="#FFC20E" stroke-width="0.9" opacity="0.3" fill="none"/>
+
+  <!-- Outer ring connections -->
+  <path d="M38 40 Q42 34 50 32" stroke="#FFC20E" stroke-width="0.8" opacity="0.3" fill="none"/>
+  <path d="M82 38 Q78 32 70 28" stroke="#FFC20E" stroke-width="0.8" opacity="0.3" fill="none"/>
+  <path d="M38 40 Q32 44 34 60" stroke="#FFC20E" stroke-width="0.7" opacity="0.25" fill="none"/>
+  <path d="M82 38 Q88 44 86 60" stroke="#FFC20E" stroke-width="0.7" opacity="0.25" fill="none"/>
+  <path d="M74 76 Q78 80 86 70" stroke="#FFC20E" stroke-width="0.7" opacity="0.25" fill="none"/>
+  <path d="M42 80 Q36 82 34 70" stroke="#FFC20E" stroke-width="0.7" opacity="0.25" fill="none"/>
+  <path d="M50 32 Q56 28 70 28" stroke="#FFC20E" stroke-width="0.7" opacity="0.2" fill="none"/>
+  <path d="M42 80 Q52 84 74 76" stroke="#FFC20E" stroke-width="0.7" opacity="0.2" fill="none"/>
+  <path d="M34 60 Q30 56 28 48" stroke="#FFC20E" stroke-width="0.5" opacity="0.15" fill="none"/>
+  <path d="M86 60 Q90 56 92 48" stroke="#FFC20E" stroke-width="0.5" opacity="0.15" fill="none"/>
+
+  <!-- Nodes -->
+  <circle cx="60" cy="60" r="4" fill="url(#centerNode)" filter="url(#glow)"/>
+  <circle cx="60" cy="60" r="6" fill="url(#nodeGlow)"/>
+
+  <circle cx="38" cy="40" r="3.5" fill="url(#outerNode)" filter="url(#glow)"/>
+  <circle cx="82" cy="38" r="4" fill="url(#outerNode)" filter="url(#glow)"/>
+  <circle cx="74" cy="76" r="3.5" fill="url(#outerNode)" filter="url(#glow)"/>
+  <circle cx="42" cy="80" r="3" fill="url(#outerNode)" filter="url(#glow)"/>
+  <circle cx="34" cy="60" r="2.5" fill="url(#outerNode)" filter="url(#glow)"/>
+  <circle cx="86" cy="60" r="2.5" fill="url(#outerNode)" filter="url(#glow)"/>
+
+  <circle cx="50" cy="32" r="2.5" fill="url(#outerNode)" opacity="0.8" filter="url(#glow)"/>
+  <circle cx="70" cy="28" r="2.5" fill="url(#outerNode)" opacity="0.8" filter="url(#glow)"/>
+  <circle cx="28" cy="48" r="2" fill="url(#outerNode)" opacity="0.65" filter="url(#glow)"/>
+  <circle cx="92" cy="48" r="2" fill="url(#outerNode)" opacity="0.65" filter="url(#glow)"/>
+  <circle cx="86" cy="70" r="2" fill="url(#outerNode)" opacity="0.7" filter="url(#glow)"/>
+  <circle cx="34" cy="70" r="2" fill="url(#outerNode)" opacity="0.7" filter="url(#glow)"/>
+</svg>

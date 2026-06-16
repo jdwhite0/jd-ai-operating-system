@@ -1,0 +1,39 @@
+<svg width="340" height="80" viewBox="0 0 340 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Built with JD AI System — partnership badge (light backgrounds). -->
+  <!-- Authored clean for the JD AI System Optimizer. Symbol = official brand mark. -->
+  <defs>
+    <radialGradient id="bw_center" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#06B6D4"/>
+    </radialGradient>
+    <radialGradient id="bw_node" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#0891B2"/>
+    </radialGradient>
+    <filter id="bw_glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="0.8" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Symbol: network burst (compact) -->
+  <g transform="translate(8, 16) scale(0.4)">
+    <path d="M60 60 Q50 48 38 40" stroke="#06B6D4" stroke-width="1.6" opacity="0.45" fill="none"/>
+    <path d="M60 60 Q72 46 82 38" stroke="#06B6D4" stroke-width="1.6" opacity="0.45" fill="none"/>
+    <path d="M60 60 Q66 72 74 76" stroke="#06B6D4" stroke-width="1.6" opacity="0.45" fill="none"/>
+    <path d="M60 60 Q48 74 42 80" stroke="#06B6D4" stroke-width="1.6" opacity="0.45" fill="none"/>
+    <path d="M60 60 Q46 54 34 60" stroke="#06B6D4" stroke-width="1.2" opacity="0.3" fill="none"/>
+    <path d="M60 60 Q74 54 86 60" stroke="#06B6D4" stroke-width="1.2" opacity="0.3" fill="none"/>
+    <circle cx="60" cy="60" r="5" fill="url(#bw_center)" filter="url(#bw_glow)"/>
+    <circle cx="38" cy="40" r="4" fill="url(#bw_node)" filter="url(#bw_glow)"/>
+    <circle cx="82" cy="38" r="4.5" fill="url(#bw_node)" filter="url(#bw_glow)"/>
+    <circle cx="74" cy="76" r="4" fill="url(#bw_node)" filter="url(#bw_glow)"/>
+    <circle cx="42" cy="80" r="3.5" fill="url(#bw_node)" filter="url(#bw_glow)"/>
+    <circle cx="34" cy="60" r="3" fill="url(#bw_node)" filter="url(#bw_glow)"/>
+    <circle cx="86" cy="60" r="3" fill="url(#bw_node)" filter="url(#bw_glow)"/>
+  </g>
+
+  <!-- Text -->
+  <text x="68" y="34" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="11" font-weight="500" letter-spacing="2.5" fill="#6B7280">BUILT WITH</text>
+  <text x="68" y="56" font-family="Inter, -apple-system, Helvetica, Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="0.5" fill="#000000">JD AI SYSTEM</text>
+</svg>
