@@ -1,23 +1,36 @@
 # Changelog
 
-All notable changes to JD AI OS are documented here.
-This project follows [Semantic Versioning](https://semver.org/).
+## 2.0.0 — 2026-08-16
 
-## [1.0.0] — 2026-06-16
+### Product
 
-The first public release of **JD AI OS** — the AI Operating System for your life & business.
+- Repositioned as a **universal open-source personal OS** on top of any device OS.
+- Chat-first first-run: retrieve repo → accounts → toolchain → EgoLite → interview → operate.
+- **GitHub + Vercel required**; star this repo after GitHub exists.
+- MIT license (with trademark note).
 
 ### Added
-- 🧠 **Core framework** — the folder-based architecture (`01_BRAIN` → `08_BACKUPS`).
-- 🤖 **Universal AI boot file** (`AI_START_HERE.md`) — orients any AI in 2 minutes.
-- ⚡ **`CLAUDE.md`** — instant Claude Code support.
-- ❤️ **The daily loop** — `today.md` heartbeat with 5 execution states.
-- ⚙️ **System rules** — command protocol, task rules, multi-AI collaboration rules.
-- 🆓 **Free Starter** (`starter/`) — a complete, clone-and-run version of the system.
-- 📖 **Docs** — architecture, philosophy, what's included, and FAQ.
 
-### Notes
-- The full product (optimizer, template library, automations, domain playbooks) is
-  available at [jdproductions.io](https://jdproductions.io).
+- `BOOT.md` — universal LLM entry
+- `ONBOARDING/` — `FIRST_RUN_SCRIPT.md`, `ACCOUNT_SEQUENCE.md`, `INTERVIEW.md`
+- `toolchain/` — `INSTALL_SEQUENCE.yaml`, `CHECKS.md`, `PLATFORM_NOTES.md`
+- `tools/` — tools rack + EgoLite install + usage contract
+- `os/` — personal OS skeleton (replaces v1 `starter/` as the active path)
+- `deploy/` — Vercel static starter
+- Root `AGENTS.md` / `CLAUDE.md` pointing at `BOOT.md`
 
-[1.0.0]: https://github.com/jdwhite0/jd-ai-operating-system/releases/tag/v1.0.0
+### Changed
+
+- README and docs rewritten for the personal OS product (not chief-of-staff marketing alone).
+- `starter/` retained as legacy redirect to `os/`.
+
+### Removed / excluded from default
+
+- Proprietary-only framing for the public starter
+- Personal/JD-only apps as required installs (Quo, trading PWAs, ACCESS, etc.)
+
+---
+
+## 1.0.0 — 2026-06-16
+
+Initial public release: Markdown second-brain starter under `starter/`, proprietary license, marketing as AI chief-of-staff.

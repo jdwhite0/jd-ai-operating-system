@@ -1,0 +1,70 @@
+# Desktop-style tools rack (portable manifest)
+# Source inspiration: a local shortcuts rack pointing at installed apps.
+# Public OS ships INSTALL targets — never proprietary .app alias files.
+
+version: "2.0.0"
+
+required:
+  - id: egolite
+    kind: agent_browser
+    binary: ego-browser
+    install: tools/egolite/install.sh
+    docs: tools/egolite/README.md
+    role: "Authenticated browsing and OAuth for agents"
+
+  - id: git
+    kind: cli
+    binary: git
+    role: "Version control"
+
+  - id: node
+    kind: cli
+    binary: node
+    role: "Runtime for CLIs and scripts"
+
+  - id: gh
+    kind: cli
+    binary: gh
+    role: "GitHub auth and repo workflows"
+
+  - id: vercel
+    kind: cli
+    binary: vercel
+    role: "Deploy hosted OS surface"
+
+  - id: ffmpeg
+    kind: cli
+    binaries: [ffmpeg, ffprobe]
+    role: "Media processing"
+
+  - id: python3
+    kind: cli
+    binary: python3
+    role: "Scripts and local automations"
+
+  - id: editor
+    kind: gui
+    choose_one: [cursor, vscode]
+    role: "Workspace for humans and agents"
+
+recommended:
+  - id: obsidian
+    kind: gui
+    role: "Browse os/ as a vault"
+  - id: ollama
+    kind: runtime
+    role: "Optional local LLM"
+  - id: whisper
+    kind: cli
+    role: "Optional local transcription"
+
+excluded_from_default:
+  - quo
+  - kucoin
+  - gecko_terminal
+  - access_pwa
+  - slack_required
+  - notion_required
+  - render_required
+  - gamma_required
+  - shipping_app_aliases

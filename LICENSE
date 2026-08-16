@@ -1,48 +1,34 @@
-JD AI OS License (v1.0)
-Copyright (c) 2026 JD Productions. All rights reserved.
+# MIT License
 
-This repository contains two kinds of material:
+Copyright (c) 2026 JD Productions
 
-1. THE FREE STARTER (the "starter/" directory and accompanying documentation)
-2. THE JD AI OS BRAND, NAME, AND FULL PRODUCT (everything sold at jdproductions.io)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
---------------------------------------------------------------------------------
-1. FREE STARTER — PERMITTED USE
---------------------------------------------------------------------------------
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-You are granted a free, worldwide, non-exclusive license to:
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-  • Use the free starter for your own personal or business purposes.
-  • Copy and modify it for your own use.
-  • Share a link to this repository.
+---
 
---------------------------------------------------------------------------------
-2. RESTRICTIONS
---------------------------------------------------------------------------------
+## Trademark note
 
-You may NOT, without prior written permission from JD Productions:
+"JD AI OS", "JD AI Operating System", "JD Productions", and related logos are
+trademarks of JD Productions. This license grants rights to the code and
+documentation in this repository. It does **not** grant permission to use those
+names or logos to market a competing product as if it were an official JD
+Productions release.
 
-  • Sell, resell, sublicense, or redistribute this material (modified or not) as
-    a product, template, course, or service of your own.
-  • Present the JD AI OS framework, name, or branding as your own creation.
-  • Use the "JD AI OS" or "JD Productions" names or logos to market a competing
-    or derivative product.
-
---------------------------------------------------------------------------------
-3. FULL PRODUCT
---------------------------------------------------------------------------------
-
-The complete JD AI OS product — including the full template library, the JD AI
-System Optimizer, automations, and domain playbooks — is a separate commercial
-product and is NOT covered by the free license above. It is available at
-https://jdproductions.io under its own terms.
-
---------------------------------------------------------------------------------
-4. NO WARRANTY
---------------------------------------------------------------------------------
-
-THE MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED. IN NO EVENT SHALL JD PRODUCTIONS BE LIABLE FOR ANY CLAIM, DAMAGES, OR
-OTHER LIABILITY ARISING FROM THE USE OF THIS MATERIAL.
-
-For commercial licensing or partnership inquiries: jdproductions.io
+Commercial offerings and private infrastructure outside this repository remain
+separate and are not included here.
