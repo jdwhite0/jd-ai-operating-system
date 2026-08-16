@@ -17,10 +17,13 @@ body:
       label: What problem does it solve?
       placeholder: "Right now I have to... which means..."
   - type: dropdown
-    id: tier
+    id: area
     attributes:
-      label: Is this for the free starter or the full product?
+      label: Where does this idea fit?
       options:
-        - Free starter
-        - Full product (jdproductions.io)
+        - First-run / onboarding
+        - Toolchain / EgoLite
+        - Personal OS (`os/`)
+        - Deploy (Vercel)
+        - Docs
         - Not sure

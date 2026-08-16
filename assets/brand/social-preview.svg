@@ -63,10 +63,10 @@
   <!-- ===== Text (left side) ===== -->
   <g font-family="Helvetica Neue, Helvetica, Arial, sans-serif">
     <text x="100" y="210" fill="#FFC20E" font-size="34" font-weight="700" letter-spacing="6">JD AI OS</text>
-    <text x="100" y="300" fill="#FFFFFF" font-size="76" font-weight="800">The AI Operating</text>
-    <text x="100" y="380" fill="#FFFFFF" font-size="76" font-weight="800">System for Your Life</text>
-    <text x="100" y="452" fill="#FFFFFF" font-size="76" font-weight="800">&amp; Business</text>
-    <text x="103" y="512" fill="#AFC4DC" font-size="27" font-weight="400">Turn any AI — Claude, ChatGPT, Gemini — into a chief-of-staff that knows you.</text>
+    <text x="100" y="300" fill="#FFFFFF" font-size="76" font-weight="800">Your Personal</text>
+    <text x="100" y="380" fill="#FFFFFF" font-size="76" font-weight="800">AI Operating</text>
+    <text x="100" y="452" fill="#FFFFFF" font-size="76" font-weight="800">System</text>
+    <text x="103" y="512" fill="#AFC4DC" font-size="27" font-weight="400">Open any AI chat. It sets up your OS from files you own.</text>
   </g>
 
   <!-- footer brand bar -->
