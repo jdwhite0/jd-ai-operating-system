@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JD AI OS</title>
+  <meta name="description" content="Personal AI operating system — files you own, any LLM you choose." />
+  <style>
+    :root {
+      --bg: #05070b;
+      --fg: #e8eef7;
+      --muted: #9aa8bc;
+      --accent: #ffc20e;
+      --line: rgba(255, 255, 255, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(255, 194, 14, 0.12), transparent 60%),
+        radial-gradient(900px 500px at 90% 10%, rgba(60, 120, 255, 0.12), transparent 55%),
+        var(--bg);
+      color: var(--fg);
+      display: grid;
+      place-items: center;
+      padding: 2rem;
+    }
+    main {
+      max-width: 36rem;
+      width: 100%;
+      border-top: 1px solid var(--line);
+      padding-top: 1.5rem;
+    }
+    p.brand {
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin: 0 0 1rem;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+    }
+    h1 {
+      font-weight: 500;
+      font-size: clamp(1.75rem, 4vw, 2.35rem);
+      line-height: 1.15;
+      margin: 0 0 0.85rem;
+    }
+    p.lead {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.55;
+      margin: 0 0 1.5rem;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+    }
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+      font-size: 0.95rem;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="brand">JD AI OS</p>
+    <h1>Your personal OS is live.</h1>
+    <p class="lead">
+      This is the default hosted surface. Replace this page with your own portal
+      after first deploy. The real system lives in your repo files — any LLM can operate it.
+    </p>
+    <p>
+      <a href="https://github.com/jdwhite0/jd-ai-operating-system">Open the repository →</a>
+    </p>
+  </main>
+</body>
+</html>

@@ -1,36 +1,33 @@
 # FAQ
 
-### What is JD AI OS, really?
-A folder-based operating system for your life and work. It gives any AI assistant a
-structured place to know you and consistent rules to operate from. Plain files on your
-machine — no app, no cloud lock-in.
+## Do I need to be a developer?
 
-### Is it free?
-There's a **free starter** in this repo you can clone and use today. The **full product**
-(the optimizer, full template library, automations, and domain playbooks) is paid at
-[jdproductions.io](https://jdproductions.io).
+No. Open a chat with any LLM, point it at this repo, and say: read `BOOT.md` and run first-run. You handle signups, 2FA, and approval dialogs. The model handles the rest.
 
-### Which AI does it work with?
-Any. Claude, ChatGPT, Gemini, local models — anything you can point at a folder. Claude
-Code reads `CLAUDE.md` automatically; every other AI reads `AI_START_HERE.md`.
+## Which AI can I use?
 
-### Do I need to know how to code?
-No. It's organized text files. You edit them like notes; the AI does the heavy lifting.
+Any. Claude, ChatGPT, Gemini, Cursor, local models — as long as it can read files and run (or guide) terminal steps.
 
-### Is my data private?
-Completely. Everything lives on your machine as plain Markdown. Nothing is sent anywhere
-unless you choose to use a cloud AI — and even then, only what you share in a session.
+## Why GitHub and Vercel?
 
-### How is this different from Notion / Obsidian / a notes app?
-Those are where you *store* notes. JD AI OS is *how an AI operates your life from them* —
-a boot file, rules, execution states, and a daily loop that make AI behave consistently.
+GitHub is where the OS lives and updates. Vercel is the required path for the hosted surface under `deploy/`. Both are free to start.
 
-### Can I use it for my business?
-Yes — that's the point. The free starter handles one person. The full product includes
-playbooks for finances, real estate, content, and multi-venture setups.
+## Why star the repo?
 
-### Can I resell it or repackage it?
-No. See [`LICENSE`](../LICENSE). Use it for yourself freely; don't sell it as your own.
+After GitHub exists, first-run asks you to star this repository. It supports the creator and helps you track updates. It is part of the happy path — not optional noise at the end.
 
-### How do I get the full system?
-👉 [jdproductions.io](https://jdproductions.io)
+## What is EgoLite?
+
+An agent-friendly browser (`ego-browser`) for login-gated and OAuth flows. Required for agent web work. See `tools/egolite/README.md`.
+
+## Is this the same as JD’s private system?
+
+No. This is a public personal OS template. Private company vaults and products are not dumped here.
+
+## What happened to `starter/`?
+
+v1 used `starter/01_BRAIN` etc. v2 uses `os/`. Keep `starter/` only as a redirect for old links.
+
+## License?
+
+MIT with a trademark note. See `LICENSE`.

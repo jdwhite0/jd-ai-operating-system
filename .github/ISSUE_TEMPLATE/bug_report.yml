@@ -29,9 +29,13 @@ body:
     attributes:
       label: Which part?
       options:
-        - Free starter (folders / templates)
-        - Boot files (AI_START_HERE / CLAUDE.md)
+        - First-run / ONBOARDING
+        - Toolchain / EgoLite
+        - Personal OS (`os/`)
+        - Deploy (Vercel)
+        - Boot files (BOOT.md / AGENTS.md / CLAUDE.md)
         - Docs
+        - Legacy starter/
         - Something else
     validations:
       required: true

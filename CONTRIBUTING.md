@@ -1,12 +1,12 @@
 # Contributing
 
-JD AI OS is a product by JD Productions, not a community-maintained open-source project,
-so we don't accept code pull requests to the framework itself.
+JD AI OS is open source (MIT). Issues and thoughtful PRs that improve the **personal OS**
+product (onboarding clarity, toolchain accuracy, docs, deploy starter) are welcome.
 
-**You're very welcome to:**
-- ⭐ Star the repo if you find it valuable.
-- 🐛 Open an issue for bugs in the free starter or docs.
-- 💡 Open an issue to suggest ideas or request features.
-- 🗣️ Share how you're using your AI OS (we love seeing it).
+**Please:**
+- Star the repo if it helps you.
+- Open issues for bugs in first-run, toolchain, EgoLite docs, or `os/` paths.
+- Keep PRs focused — no dumps of private company infrastructure.
+- Do not add Quo / trading / personal JD-only apps as required installs.
 
-For the full product, partnerships, or commercial licensing: **jdproductions.io**
+For partnerships or commercial work beyond this repo: **jdproductions.io**

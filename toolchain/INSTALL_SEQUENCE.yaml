@@ -1,0 +1,138 @@
+# Ordered toolchain unlock for JD AI OS
+# LLMs: execute steps in order. detect → install if missing → verify → narrate → next.
+# Do not invent extra required tools. Optional steps are marked optional: true.
+
+version: "2.0.0"
+repo: https://github.com/jdwhite0/jd-ai-operating-system
+
+ux:
+  narrate_before_each_step: true
+  one_step_at_a_time: true
+  human_gates: [account_signup, 2fa, app_store, gatekeeper, browser_oauth]
+
+steps:
+  - id: package_manager
+    required: true
+    name: Package manager
+    why: "Installs everything else safely on this OS."
+    darwin:
+      detect: "command -v brew"
+      install: '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
+      post_note: "On Apple Silicon, ensure brew is on PATH (often /opt/homebrew/bin)."
+    linux:
+      detect: "command -v apt-get || command -v dnf || command -v pacman"
+      install_hint: "Use the distro package manager (apt/dnf/pacman). Prefer apt on Ubuntu/Debian."
+    windows:
+      detect: "winget --version"
+      install_hint: "Install App Installer / winget from Microsoft, or Chocolatey if user prefers."
+
+  - id: git
+    required: true
+    name: Git
+    why: "Clone, update, and version your personal OS."
+    detect: "git --version"
+    darwin_linux_install: "brew install git  # or apt install git"
+    windows_install: "winget install Git.Git"
+
+  - id: node
+    required: true
+    name: Node.js LTS
+    why: "Runs CLIs, scripts, and deploy tooling."
+    detect: "node -v && npm -v"
+    darwin_linux_install: "brew install node  # or install LTS from https://nodejs.org"
+    windows_install: "winget install OpenJS.NodeJS.LTS"
+    verify_min_major: 20
+
+  - id: gh
+    required: true
+    name: GitHub CLI
+    why: "Auth, star checks, and repo workflows from the terminal."
+    detect: "gh --version"
+    darwin_linux_install: "brew install gh"
+    windows_install: "winget install GitHub.cli"
+    after_install: "gh auth login  # if not already authenticated"
+
+  - id: vercel_cli
+    required: true
+    name: Vercel CLI
+    why: "Required deploy path for the hosted OS surface."
+    detect: "vercel --version"
+    install: "npm install -g vercel"
+    after_install: "vercel login  # if not already authenticated"
+
+  - id: editor
+    required: true
+    name: Code editor (pick one)
+    why: "Human + agent friendly workspace for your OS files."
+    choose_one:
+      - id: cursor
+        name: Cursor
+        detect_darwin: "test -d /Applications/Cursor.app"
+        install_url: "https://cursor.com"
+      - id: vscode
+        name: Visual Studio Code
+        detect: "code --version"
+        darwin_linux_install: "brew install --cask visual-studio-code"
+        windows_install: "winget install Microsoft.VisualStudioCode"
+    llm_behavior: "Ask the user which editor they want. Do not install both unless they ask."
+
+  - id: egolite
+    required: true
+    name: EgoLite (agent browser)
+    why: "Best browser for AI agents doing real web work with your login state."
+    detect: "command -v ego-browser"
+    docs: "tools/egolite/README.md"
+    darwin_install: "sh tools/egolite/install.sh"
+    other_os: "https://lite.ego.app/"
+    human_gate: "User finishes EgoLite onboarding GUI; PATH may need ~/.local/bin"
+
+  - id: ffmpeg
+    required: true
+    name: FFmpeg + FFprobe
+    why: "Media processing and inspection for agent workflows."
+    detect: "ffmpeg -version && ffprobe -version"
+    darwin_linux_install: "brew install ffmpeg"
+    windows_install: "winget install Gyan.FFmpeg"
+
+  - id: python
+    required: true
+    name: Python 3
+    why: "Scripts and local automations."
+    detect: "python3 --version"
+    darwin_linux_install: "brew install python"
+    windows_install: "winget install Python.Python.3.12"
+
+  - id: whisper
+    required: false
+    optional: true
+    name: whisper.cpp (local transcription)
+    why: "Optional local audio → text."
+    detect: "command -v whisper-cli || command -v whisper"
+    install_hint: "Install only if user wants local transcription. Prefer brew formulas or official whisper.cpp docs."
+
+  - id: obsidian
+    required: false
+    optional: true
+    name: Obsidian
+    why: "Recommended human UI for browsing the os/ folder as a vault."
+    detect_darwin: "test -d /Applications/Obsidian.app"
+    install_url: "https://obsidian.md"
+    llm_behavior: "Recommend after first-run; open os/ as vault if they install it."
+
+  - id: ollama
+    required: false
+    optional: true
+    name: Ollama
+    why: "Optional local LLM runtime."
+    detect: "ollama --version"
+    install_url: "https://ollama.com"
+
+exclude_from_default_install:
+  - Quo
+  - KuCoin
+  - GeckoTerminal
+  - ACCESS product PWA
+  - Slack as required
+  - Notion as required
+  - Render as required
+  - Gamma as required
